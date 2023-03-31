@@ -13,6 +13,12 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="short icon" href="IMG/logo_sneakDog.ico.ico">
     <link rel="stylesheet" href="Css/estiloSneakDog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -26,38 +32,44 @@
             <button type="button" class="btn hoverBtn" data-bs-toggle="modal" data-bs-target="#exampleModal"
                 id="botonCarro">
                 <i class="fa-solid fa-cart-plus" id="Carrito"> </i>
-
             </button>
         </div>
+        html <!-- animacion lupa -->
+    <div class="container1 lupa">
+        <div class="src-box"> 
+            <input type="text" placeholder=" "> 
+            <button type="reset"></button> 
+        </div>
+    </div>
     </div>
     <div>
         <nav class="barra fixed-top">
             <a href="./sneakDog.html">Home</a>
-            <a href="#seccion3">About Us</a>
+            <a href="#seccionAbout">About Us</a>
             <a href="./sneakProducts.html">Products</a>
             <a href="#">Stores</a>
-            <a href="#">Contact</a>
+            <a href="#seccionContactanos">Contact</a>
             <div class="animation start-home"></div>
         </nav>
     </div>
 
     <section>
         <div class="carruselInicio container mt-xl-5 mb-4">
-            <div id="carouselExampleDark" class="carousel  slide">
+            <div id="carruselHome" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#carruselHome" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carruselHome" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carruselHome" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    <button type="button" data-bs-target="#carruselHome" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    <button type="button" data-bs-target="#carruselHome" data-bs-slide-to="4"
                         aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-item active">
                         <img src="IMG/zapato9.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5></h5>
@@ -65,7 +77,7 @@
 
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-item">
                         <img src="IMG/zapato4.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
 
@@ -92,13 +104,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselHome" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselHome" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -152,36 +162,7 @@
         </div>
     </div>
 
-    <section id="seccion1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit, consequatur itaque
-        officiis dicta ratione, fuga sequi saepe veritatis hic minima tempore commodi culpa. Libero fugiat ipsam
-        mollitia suscipit incidunt ratione! Iusto assumenda, cumque id labore quisquam dolore at suscipit doloribus
-        corrupti sunt neque omnis consequuntur hic, illum aliquid provident reprehenderit accusamus recusandae mollitia
-        placeat impedit vitae voluptatem! Esse, odit. Corporis architecto voluptatum repudiandae aliquid deleniti omnis
-        inventore impedit at. Ipsam architecto laborum voluptates quia, repudiandae adipisci nobis libero optio
-        exercitationem quae voluptatem expedita nesciunt amet quod perferendis nam asperiores sit voluptas ea facere, a
-        aut rerum provident eum? Ex, quis nobis repellendus similique reprehenderit labore quos libero harum nostrum
-        autem asperiores, aut eaque recusandae veniam. Doloremque voluptatum, iste error ad aliquid molestiae dolorum
-        veniam officia culpa vitae eum doloribus sed non illum eos explicabo, odio commodi sint voluptatibus
-        perspiciatis minima quisquam sunt. Commodi saepe sapiente dolorem quidem dicta labore rem id similique beatae
-        ipsam at maxime quam deserunt tempore autem ratione dolore totam eum, ipsum quisquam. Tenetur dignissimos velit
-        minima quaerat expedita, iste veniam ut quisquam eaque fugit? Voluptate ipsam iusto, id nam molestiae, excepturi
-        molestias fugit corrupti delectus quia veritatis placeat. Ad soluta mollitia eaque fugiat, fugit nostrum!
-    </section>
-    <section id="seccion2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit, consequatur itaque
-        officiis dicta ratione, fuga sequi saepe veritatis hic minima tempore commodi culpa. Libero fugiat ipsam
-        mollitia suscipit incidunt ratione! Iusto assumenda, cumque id labore quisquam dolore at suscipit doloribus
-        corrupti sunt neque omnis consequuntur hic, illum aliquid provident reprehenderit accusamus recusandae mollitia
-        placeat impedit vitae voluptatem! Esse, odit. Corporis architecto voluptatum repudiandae aliquid deleniti omnis
-        inventore impedit at. Ipsam architecto laborum voluptates quia, repudiandae adipisci nobis libero optio
-        exercitationem quae voluptatem expedita nesciunt amet quod perferendis nam asperiores sit voluptas ea facere, a
-        aut rerum provident eum? Ex, quis nobis repellendus similique reprehenderit labore quos libero harum nostrum
-        autem asperiores, aut eaque recusandae veniam. Doloremque voluptatum, iste error ad aliquid molestiae dolorum
-        veniam officia culpa vitae eum doloribus sed non illum eos explicabo, odio commodi sint voluptatibus
-        perspiciatis minima quisquam sunt. Commodi saepe sapiente dolorem quidem dicta labore rem id similique beatae
-        ipsam at maxime quam deserunt tempore autem ratione dolore totam eum, ipsum quisquam. Tenetur dignissimos velit
-        minima quaerat expedita, iste veniam ut quisquam eaque fugit? Voluptate ipsam iusto, id nam molestiae, excepturi
-        molestias fugit corrupti delectus quia veritatis placeat. Ad soluta mollitia eaque fugiat, fugit nostrum!
-    </section>
+
     <section id="seccion3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit, consequatur itaque
         officiis dicta ratione, fuga sequi saepe veritatis hic minima tempore commodi culpa. Libero fugiat ipsam
         mollitia suscipit incidunt ratione! Iusto assumenda, cumque id labore quisquam dolore at suscipit doloribus
@@ -197,41 +178,13 @@
         minima quaerat expedita, iste veniam ut quisquam eaque fugit? Voluptate ipsam iusto, id nam molestiae, excepturi
         molestias fugit corrupti delectus quia veritatis placeat. Ad soluta mollitia eaque fugiat, fugit nostrum!
     </section>
-    <section id="seccion4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit, consequatur itaque
-        officiis dicta ratione, fuga sequi saepe veritatis hic minima tempore commodi culpa. Libero fugiat ipsam
-        mollitia suscipit incidunt ratione! Iusto assumenda, cumque id labore quisquam dolore at suscipit doloribus
-        corrupti sunt neque omnis consequuntur hic, illum aliquid provident reprehenderit accusamus recusandae mollitia
-        placeat impedit vitae voluptatem! Esse, odit. Corporis architecto voluptatum repudiandae aliquid deleniti omnis
-        inventore impedit at. Ipsam architecto laborum voluptates quia, repudiandae adipisci nobis libero optio
-        exercitationem quae voluptatem expedita nesciunt amet quod perferendis nam asperiores sit voluptas ea facere, a
-        aut rerum provident eum? Ex, quis nobis repellendus similique reprehenderit labore quos libero harum nostrum
-        autem asperiores, aut eaque recusandae veniam. Doloremque voluptatum, iste error ad aliquid molestiae dolorum
-        veniam officia culpa vitae eum doloribus sed non illum eos explicabo, odio commodi sint voluptatibus
-        perspiciatis minima quisquam sunt. Commodi saepe sapiente dolorem quidem dicta labore rem id similique beatae
-        ipsam at maxime quam deserunt tempore autem ratione dolore totam eum, ipsum quisquam. Tenetur dignissimos velit
-        minima quaerat expedita, iste veniam ut quisquam eaque fugit? Voluptate ipsam iusto, id nam molestiae, excepturi
-        molestias fugit corrupti delectus quia veritatis placeat. Ad soluta mollitia eaque fugiat, fugit nostrum!
-    </section>
-    <section id="seccion5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit, consequatur itaque
-        officiis dicta ratione, fuga sequi saepe veritatis hic minima tempore commodi culpa. Libero fugiat ipsam
-        mollitia suscipit incidunt ratione! Iusto assumenda, cumque id labore quisquam dolore at suscipit doloribus
-        corrupti sunt neque omnis consequuntur hic, illum aliquid provident reprehenderit accusamus recusandae mollitia
-        placeat impedit vitae voluptatem! Esse, odit. Corporis architecto voluptatum repudiandae aliquid deleniti omnis
-        inventore impedit at. Ipsam architecto laborum voluptates quia, repudiandae adipisci nobis libero optio
-        exercitationem quae voluptatem expedita nesciunt amet quod perferendis nam asperiores sit voluptas ea facere, a
-        aut rerum provident eum? Ex, quis nobis repellendus similique reprehenderit labore quos libero harum nostrum
-        autem asperiores, aut eaque recusandae veniam. Doloremque voluptatum, iste error ad aliquid molestiae dolorum
-        veniam officia culpa vitae eum doloribus sed non illum eos explicabo, odio commodi sint voluptatibus
-        perspiciatis minima quisquam sunt. Commodi saepe sapiente dolorem quidem dicta labore rem id similique beatae
-        ipsam at maxime quam deserunt tempore autem ratione dolore totam eum, ipsum quisquam. Tenetur dignissimos velit
-        minima quaerat expedita, iste veniam ut quisquam eaque fugit? Voluptate ipsam iusto, id nam molestiae, excepturi
-        molestias fugit corrupti delectus quia veritatis placeat. Ad soluta mollitia eaque fugiat, fugit nostrum!
-    </section>
+
+
 
 
     <footer>
-        <div class="slider">
-            <div class="slide-track">
+        <div class="container">
+            <div class="sliderPEPE">
                 <div class="slide">
                     <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -261,48 +214,11 @@
                         </svg></a>
                 </div>
                 <div class="slide">
-                    <a href="https://www.twitch.tv/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
-                            <path
-                                d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
-                            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
-                        </svg> </a>
-                </div>
-                <div class="slide">
-                    <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                        </svg></a>
-                </div>
-                <div class="slide">
                     <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                         </svg></a>
-                </div>
-                <div class="slide">
-                    <a href="https://web.whatsapp.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                            <path
-                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                        </svg></a>
-                </div>
-                <div class="slide">
-                    <a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                            <path
-                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                        </svg></a>
-                </div>
-                <div class="slide">
-                    <a href="https://www.twitch.tv/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
-                            <path
-                                d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
-                            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
-                        </svg> </a>
                 </div>
                 <div class="slide">
                     <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -333,32 +249,182 @@
                         </svg></a>
                 </div>
                 <div class="slide">
-                    <a href="https://www.twitch.tv/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+                    <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
-                                d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
-                            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
-                        </svg> </a>
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg></a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg></a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg></a>
+                </div>
+                <div class="slide">
+                    <a href="https://web.whatsapp.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg></a>
+                </div>
+                <div class="slide">
+                    <a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg></a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg></a>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-5">
-                    <a href="#">¿Quienes somos?</a>
-                    <p>SneakDog nacio en 2021 como una tienda virtual de sneackers de alta gama e historia,
-                        especializado en colaboraciones exclusivas de artistas, celebridades; ediciones coleccionistas
-                    </p>
-                    <p>Actualmente, contamos con multiples sedes en colombia. agregando mas productos comerciales a
-                        nuestras tiendas, sin embargo. las piezas de coleccionistas siguen en circulacion.</p>
-                    <a href="#">Noticias</a>
-                    <a href="#">Contactanos</a>
-                    <p>Telefono: 310-456-5663</p>
-                    <p>Correo electronico: Infosneakdog@SneakDog.com</p>
-                    <a href="#">Metodos de pago</a>
+                <div class="col-lg-5">
+                    <div class="col-12">
+                        <a href="#">About us</a>
+                        <p>SneakDog was born in 2021 as a virtual store for high-end and history sneakers, specialized
+                            in exclusive collaborations with artists, celebrities; collectors editions
+                        </p>
+                        <p>Currently, we have multiple offices in U.S, Mexico, Argentina and Colombia. adding more
+                            commercial products to our stores, however. collectors pieces are still in circulation.</p>
+                        <a href="#">News</a>
+                        <a href="#">Contact us</a>
+                        <p>Telephone: 310-456-5663</p>
+                        <p>e-mail: Infosneakdog@SneakDog.com</p>
+                        <div class="payments">
+                            <a href="#">Payments</a>
+                            <div class="tarjetas">
+                                <ul class="listatarjetas">
+                                    <li><svg width="57" height="53" viewBox="0 0 37 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="23" rx="4" fill="#F6F6F6" />
+                                            <g clip-path="url(#clip0_1_394)">
+                                                <path
+                                                    d="M18.548 20.923C23.7523 20.923 27.9712 16.7042 27.9712 11.5001C27.9712 6.29599 23.7523 2.07723 18.548 2.07723C13.3436 2.07723 9.12469 6.29599 9.12469 11.5001C9.12469 16.7042 13.3436 20.923 18.548 20.923Z"
+                                                    fill="url(#paint0_radial_1_394)" />
+                                                <path
+                                                    d="M21.0897 9.18191H18.859C18.849 9.18191 18.839 9.18049 18.8291 9.18252C18.4742 9.25949 17.8053 9.62234 17.8087 10.4148C17.7903 10.7197 17.9238 11.205 18.5614 11.4073C18.5633 11.4073 20.1515 11.4073 20.1515 11.4073C20.2219 11.4073 20.6562 11.5066 20.6274 12.2641C20.5982 13.0277 19.9472 13.1269 19.8535 13.2281H17.3896C17.3119 13.2281 17.2489 13.3021 17.2489 13.3798C17.2489 13.4575 17.3119 13.5316 17.3896 13.5316H19.8671C19.8751 13.5316 19.883 13.4945 19.8909 13.4931C20.2291 13.4353 20.877 13.0883 20.9087 12.2583C20.9495 11.185 20.173 11.1172 20.1651 11.1167C20.1662 11.1164 18.5956 11.1121 18.5956 11.1121C18.0594 11.014 18.0883 10.4447 18.0899 10.4199C18.0901 10.4165 18.0902 10.4254 18.0902 10.422C18.0844 9.70306 18.7676 9.48537 18.8756 9.48537H21.0898C21.1675 9.48537 21.2306 9.41133 21.2306 9.33364C21.2305 9.25595 21.1674 9.18191 21.0897 9.18191Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M24.4862 9.16607C24.4734 9.16243 24.46 9.18195 24.4467 9.18195H22.7798C22.0253 9.18195 21.6845 10.0556 21.6705 10.0938C21.6682 10.0999 21.6664 10.0954 21.6649 10.1019C21.6476 10.18 21.2414 12.0174 21.255 12.624C21.2681 13.1948 21.8493 13.4022 22.1548 13.4349C22.1599 13.4355 22.1649 13.4306 22.1701 13.4306H24.4873C24.566 13.4306 24.63 13.3575 24.63 13.2788C24.63 13.2001 24.5661 13.1271 24.4873 13.1271H22.1788C22.1063 13.1271 21.5504 13.0423 21.5404 12.6006C21.535 12.3635 21.6025 11.9097 21.6838 11.4513L24.9087 11.4272C24.9775 11.4267 25.0362 11.3784 25.048 11.3106C25.0543 11.2751 25.1992 10.4504 25.1992 9.95589C25.1991 9.36747 24.5154 9.17457 24.4862 9.16607ZM24.7863 11.1458L21.7361 11.1713C21.8298 10.6743 21.9251 10.2669 21.9412 10.1938C21.9737 10.1124 22.2535 9.48532 22.7798 9.48532H24.4241C24.5131 9.48532 24.9139 9.64271 24.9139 9.97622C24.9139 10.3409 24.8263 10.8973 24.7863 11.1458Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M17.3844 10.0362C17.4681 9.46705 16.7492 9.1821 16.6146 9.1821C16.6144 9.1821 16.6142 9.1821 16.6142 9.1821C16.0337 9.1821 15.1543 9.20203 15.0625 9.19889C15.0503 9.19758 15.0376 9.20567 15.0249 9.20759C14.6654 9.26484 14.1772 9.72783 14.0204 10.1561L14.0229 10.1591C14.0072 10.2068 13.9934 10.2804 13.9725 10.3911C13.9471 10.5249 13.9116 10.7166 13.8692 10.9459C13.7846 11.4042 13.6731 12.0154 13.5618 12.6264C13.3393 13.8483 13.1183 15.0701 13.1183 15.0701C13.1047 15.1455 13.1547 15.2177 13.2301 15.2314C13.2384 15.2329 13.2467 15.2337 13.2549 15.2337C13.3206 15.2337 13.3791 15.1867 13.3911 15.1196C13.4846 14.6031 13.6379 13.7572 13.7914 12.9139C14.1534 13.3706 14.6038 13.4186 14.6263 13.4207C14.6319 13.4213 14.6375 13.4217 14.6432 13.4212L16.0686 13.3804C16.0809 13.3801 16.0928 13.3782 16.1044 13.3747C16.7806 13.1718 16.984 12.4741 16.9924 12.4444C16.9937 12.4395 16.9949 12.4344 16.9957 12.4293L17.3826 10.0593C17.3836 10.0543 17.3837 10.0413 17.3844 10.0362ZM17.1077 10.0309L16.7236 12.3752C16.7036 12.4381 16.5269 12.9477 16.0419 13.1037L14.646 13.1435C14.5816 13.1345 14.1461 13.0544 13.8638 12.5169C14.0694 11.3887 14.2581 10.3604 14.2825 10.2513C14.4119 9.90374 14.8304 9.53027 15.0652 9.49011C15.1184 9.49335 15.1911 9.49345 15.2917 9.49366C15.4387 9.49386 15.6351 9.49376 15.8312 9.49335C16.1562 9.49285 16.481 9.49173 16.5827 9.49133C16.7474 9.49011 17.1477 9.7696 17.1077 10.0309Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M10.9634 9.10157C11.1826 9.10157 11.3602 8.91204 11.3602 8.67824C11.3602 8.44444 11.1826 8.25491 10.9634 8.25491C10.7443 8.25491 10.5666 8.44444 10.5666 8.67824C10.5666 8.91204 10.7443 9.10157 10.9634 9.10157Z"
+                                                    fill="#FDB718" />
+                                                <path
+                                                    d="M10.5627 7.34177C10.5627 7.15575 10.4495 6.99947 10.2931 6.94272C10.161 7.18175 10.0389 7.42715 9.92755 7.67832C9.99411 7.73203 10.076 7.76511 10.1659 7.76511C10.3851 7.76511 10.5627 7.57554 10.5627 7.34177Z"
+                                                    fill="#FDB718" />
+                                                <path
+                                                    d="M9.76137 8.67821C9.76137 8.5634 9.71818 8.45952 9.64858 8.38325C9.56705 8.61631 9.49432 8.85341 9.431 9.09437C9.61834 9.06048 9.76137 8.88771 9.76137 8.67821Z"
+                                                    fill="#FDB718" />
+                                                <path
+                                                    d="M11.0188 14.2589C11.238 14.2589 11.4156 14.0694 11.4156 13.8356C11.4156 13.6018 11.238 13.4123 11.0188 13.4123C10.7996 13.4123 10.622 13.6018 10.622 13.8356C10.622 14.0694 10.7996 14.2589 11.0188 14.2589Z"
+                                                    fill="#FDB718" />
+                                                <path
+                                                    d="M9.617 13.8356C9.617 13.6591 9.4941 13.5146 9.33478 13.4905C9.37989 13.6996 9.43158 13.9062 9.49035 14.11C9.56693 14.0458 9.617 13.9474 9.617 13.8356Z"
+                                                    fill="#FDB718" />
+                                                <path
+                                                    d="M10.5609 15.216C10.5609 14.9823 10.3832 14.7927 10.164 14.7927C10.0076 14.7927 9.87363 14.8901 9.80899 15.0304C9.89113 15.2331 9.97994 15.4324 10.0755 15.6278C10.1041 15.6348 10.1335 15.6393 10.164 15.6393C10.3831 15.6394 10.5609 15.4498 10.5609 15.216Z"
+                                                    fill="#FDB718" />
+                                                <path
+                                                    d="M11.2346 12.52H10.4388C10.3872 12.4188 10.2394 12.2447 10.063 12.2447C9.8438 12.2447 9.66618 12.4434 9.66618 12.6772C9.66618 12.9109 9.8438 13.1087 10.063 13.1087C10.2394 13.1087 10.3872 13.0257 10.4388 12.8233H11.0902H11.3145H11.3335L12.1681 11.306H13.4553V11.1037H11.3452L10.4778 9.5864H10.4174H10.1941H9.31567C9.29504 9.68694 9.27643 9.7882 9.25893 9.88986H10.3517L11.0616 11.1037H9.13097C9.12824 11.171 9.12601 11.2384 9.12469 11.306H11.9249L11.2346 12.52Z"
+                                                    fill="#FDB718" />
+                                                <path
+                                                    d="M14.4902 7.91743H14.9157C14.9157 7.91743 15.0404 7.95415 15.0183 8.10083L14.9376 8.66568H14.4901C14.4901 8.66568 14.2921 8.59234 14.3947 8.37961C14.3947 8.37961 14.4883 8.26591 14.5708 8.26591L14.9807 8.27967"
+                                                    stroke="white" stroke-width="0.101155" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M15.7815 7.91743H15.356C15.356 7.91743 15.2093 7.99077 15.1726 8.18155C15.1726 8.18155 15.0736 8.46033 15.1909 8.66568L15.2405 8.6767H15.6402"
+                                                    stroke="white" stroke-width="0.101155" stroke-miterlimit="10" />
+                                                <path d="M16.0271 7.57453L15.9653 7.91755L15.8272 8.6841" stroke="white"
+                                                    stroke-width="0.101155" stroke-miterlimit="10" />
+                                                <path
+                                                    d="M15.9397 8.06018C15.9397 8.06018 15.9906 7.95953 16.0786 7.91735C16.0786 7.91735 16.3996 7.8862 16.4564 7.96692C16.4564 7.96692 16.5207 7.99807 16.5169 8.08982L16.4179 8.66569"
+                                                    stroke="white" stroke-width="0.101155" stroke-miterlimit="10" />
+                                            </g>
+                                            <defs>
+                                                <radialGradient id="paint0_radial_1_394" cx="0" cy="0" r="1"
+                                                    gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="translate(18.7165 11.4663) scale(9.42309)">
+                                                    <stop offset="0.3155" stop-color="#2D5CA8" />
+                                                    <stop offset="0.5312" stop-color="#285496" />
+                                                    <stop offset="0.7289" stop-color="#1F4272" />
+                                                    <stop offset="1" stop-color="#0D2D4D" />
+                                                </radialGradient>
+                                                <clipPath id="clip0_1_394">
+                                                    <rect width="19.0424" height="19.0002" fill="white"
+                                                        transform="translate(9.00424 2)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></li>
+                                    <li><svg width="57" height="53" viewBox="0 0 37 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="23" rx="4" fill="#F6F6F6" />
+                                            <path
+                                                d="M20.3025 19.6371C24.8496 19.6588 29 15.9287 29 11.3908C29 6.42846 24.8496 2.99839 20.3025 3H16.3892C11.7876 2.99839 8 6.42947 8 11.3908C8 15.9297 11.7876 19.6589 16.3892 19.6371H20.3025Z"
+                                                fill="#0079BE" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.4076 3.68776C12.2028 3.6891 8.79546 7.09738 8.79448 11.3039C8.79546 15.5097 12.2027 18.9176 16.4076 18.9189C20.6134 18.9176 24.0214 15.5097 24.022 11.3039C24.0213 7.09738 20.6134 3.6891 16.4076 3.68776ZM11.5818 11.3039C11.5858 9.24832 12.8696 7.49547 14.6798 6.79898V15.8077C12.8696 15.1116 11.5858 13.3597 11.5818 11.3039ZM18.1347 6.79865V15.8097C19.9456 15.1135 21.2313 13.361 21.2347 11.3039C21.2313 9.24731 19.9456 7.49353 18.1347 6.79865Z"
+                                                fill="white" />
+                                        </svg>
+                                    </li>
+                                    <li><svg width="57" height="53" viewBox="0 0 37 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="23" rx="4" fill="#2F70C8" />
+                                            <path
+                                                d="M27.305 6.44204L26.5891 8.02024H28.0248L27.305 6.44204ZM19.0439 7.42002C19.1788 7.35597 19.2583 7.21666 19.2583 7.04366C19.2583 6.87412 19.1748 6.75134 19.0399 6.69364C18.917 6.62968 18.7279 6.6223 18.5466 6.6223H17.2658V7.50164H18.5294C18.7318 7.50168 18.9009 7.49898 19.0439 7.42002ZM2.63213 6.44204L1.92433 8.02024H3.34421L2.63213 6.44204ZM35.5866 16.5525H33.5779V15.7033H35.5785C35.7768 15.7033 35.9157 15.6797 35.9993 15.6052C36.0784 15.5389 36.1231 15.4451 36.1223 15.3471C36.1223 15.2317 36.0719 15.14 35.9951 15.0852C35.9198 15.0248 35.8098 14.9973 35.6286 14.9973C34.652 14.9671 33.4336 15.0247 33.4336 13.7717C33.4336 13.1974 33.8345 12.5928 34.926 12.5928H36.9979V11.805H35.0729C34.492 11.805 34.0699 11.9315 33.7711 12.1284V11.805H30.9238C30.4686 11.805 29.9342 11.9076 29.6814 12.1284V11.805H24.5967V12.1284C24.1921 11.8628 23.5092 11.805 23.1942 11.805H19.8403V12.1284C19.5202 11.8464 18.8082 11.805 18.3744 11.805H14.6209L13.7621 12.6506L12.9576 11.805H7.35054V17.3306H12.8518L13.7367 16.4714L14.5704 17.3306L17.9614 17.3333V16.0335H18.2949C18.7448 16.0401 19.2754 16.0234 19.7437 15.8393V17.3305H22.5407V15.8902H22.6756C22.8477 15.8902 22.8648 15.8968 22.8648 16.0533V17.3301H31.3617C31.9011 17.3301 32.4651 17.2047 32.7773 16.9764V17.3301H35.4725C36.0333 17.3301 36.581 17.2586 36.9978 17.0755V16.0462C36.7452 16.3823 36.2528 16.5525 35.5866 16.5525ZM18.3394 15.2477H17.0416V16.5759H15.0199L13.7391 15.2651L12.4081 16.5759H8.28804V12.6162H12.4715L13.7512 13.9142L15.0742 12.6162H18.3978C19.2232 12.6162 20.1507 12.8241 20.1507 13.9207C20.1507 15.0207 19.2486 15.2477 18.3394 15.2477ZM24.5803 15.0682C24.7272 15.2615 24.7484 15.4419 24.7526 15.791V16.576H23.7083V16.0806C23.7083 15.8424 23.7336 15.4896 23.5402 15.3055C23.3884 15.1637 23.1566 15.1298 22.777 15.1298H21.6654V16.576H20.6204V12.6162H23.0216C23.5484 12.6162 23.9318 12.6375 24.2732 12.803C24.6015 12.9835 24.808 13.2307 24.808 13.6824C24.808 14.3144 24.3446 14.6368 24.0708 14.7358C24.3022 14.8135 24.4914 14.9529 24.5803 15.0682ZM28.8769 13.4351H26.4412V14.155H28.8173V14.9629H26.4412V15.7508L28.8769 15.7543V16.5759H25.4053V12.6162H28.8769V13.4351ZM31.5496 16.5759H29.5238V15.7268H31.5416C31.7389 15.7268 31.8788 15.703 31.9665 15.6287C32.038 15.5674 32.0894 15.4784 32.0894 15.3706C32.0894 15.2551 32.0337 15.1635 31.9624 15.1085C31.8828 15.0482 31.773 15.0208 31.592 15.0208C30.6193 14.9905 29.4011 15.0481 29.4011 13.7951C29.4011 13.2208 29.7978 12.6162 30.8882 12.6162H32.9736V13.4589H31.0654C30.8763 13.4589 30.7533 13.4655 30.6488 13.5306C30.5347 13.5947 30.4925 13.6898 30.4925 13.8153C30.4925 13.9647 30.5892 14.0664 30.72 14.1103C30.8298 14.145 30.9476 14.1552 31.1248 14.1552L31.6848 14.1691C32.2492 14.1814 32.637 14.2704 32.8726 14.4874C33.075 14.6781 33.1837 14.9189 33.1837 15.3263C33.1837 16.1782 32.5986 16.5759 31.5496 16.5759ZM23.4825 13.499C23.3569 13.431 23.1714 13.4274 22.9863 13.4274H21.7054V14.3167H22.9692C23.1715 14.3167 23.3435 14.3102 23.4825 14.2351C23.6173 14.161 23.698 14.0244 23.698 13.8551C23.698 13.6857 23.6173 13.5631 23.4825 13.499ZM35.1041 13.4274C34.9149 13.4274 34.7891 13.4339 34.6832 13.4989C34.5734 13.5631 34.5313 13.6582 34.5313 13.7838C34.5313 13.9331 34.6239 14.0348 34.7587 14.0788C34.8685 14.1135 34.9862 14.1236 35.1594 14.1236L35.7233 14.1373C36.2921 14.1501 36.672 14.2392 36.9035 14.4562C36.9457 14.4863 36.971 14.5201 37 14.5541V13.4274L35.1041 13.4274ZM18.3755 13.4274H17.0192V14.4359H18.3634C18.763 14.4359 19.0115 14.2554 19.0117 13.9129C19.0115 13.5666 18.751 13.4274 18.3755 13.4274ZM9.32401 13.4274V14.1473H11.6074V14.9552H9.32401V15.743H11.8813L13.0694 14.5814L11.9318 13.4274H9.32401ZM16.0017 16.1964V13.0218L14.4048 14.5836L16.0017 16.1964ZM9.4113 9.83887V10.5212H18.1013L18.0972 9.07777H18.2654C18.3832 9.0815 18.4174 9.09137 18.4174 9.26824V10.5212H22.912V10.1851C23.2745 10.3619 23.8383 10.5212 24.5803 10.5212H26.4711L26.8758 9.64191H27.7729L28.1687 10.5212H31.8123V9.68596L32.364 10.5212H35.284V5H32.3943V5.65206L31.9897 5H29.0246V5.65206L28.653 5H24.6477C23.9772 5 23.388 5.08513 22.9119 5.32241V5H20.1479V5.32241C19.8449 5.07783 19.4321 5 18.9733 5H8.87535L8.19786 6.4261L7.50206 5H4.32155V5.65206L3.97208 5H1.25964L4.74369e-05 7.62518V9.72505L1.86261 5.7662H3.40806L5.17698 9.5144V5.7662H6.8747L8.23591 8.45178L9.48644 5.7662H11.2182V9.72505H10.1521L10.1482 6.62455L8.63988 9.72505H7.72662L6.21447 6.6218V9.72505H4.09879L3.69913 8.84202H1.53345L1.12966 9.72505H4.74369e-05L0 10.5215H1.77727L2.17797 9.64213H3.07519L3.47485 10.5215H6.97157V9.84914L7.28366 10.5243H9.09888L9.4113 9.83887ZM23.1049 6.22764C23.441 5.91168 23.9677 5.76597 24.6845 5.76597H25.6914V6.61423H24.7056C24.3262 6.61423 24.1116 6.66558 23.9053 6.84881C23.7279 7.01546 23.6062 7.33057 23.6062 7.74549C23.6062 8.16964 23.699 8.47543 23.8922 8.67519C24.0523 8.83184 24.3434 8.87936 24.6172 8.87936H25.0845L26.5504 5.76611H28.1088L29.8698 9.51057V5.76615H31.4536L33.2819 8.52326V5.76615H34.3474V9.72487H32.8734L30.9018 6.75359V9.72487H28.7835L28.3788 8.84184H26.218L25.8253 9.72487H24.6081C24.1026 9.72487 23.4624 9.62317 23.0999 9.28698C22.7343 8.95088 22.5443 8.49556 22.5443 7.77571C22.5441 7.18851 22.6576 6.6518 23.1049 6.22764ZM20.9655 5.76602H22.0267V9.72487H20.9655V5.76602ZM16.1805 5.76602H18.5728C19.1043 5.76602 19.4962 5.77885 19.8324 5.95564C20.1615 6.13247 20.3587 6.39065 20.3587 6.83214C20.3587 7.4634 19.8956 7.78945 19.6259 7.88741C19.8534 7.96624 20.0479 8.10546 20.1406 8.22077C20.2874 8.41769 20.3127 8.59357 20.3127 8.9471V9.72483H19.2637L19.2597 9.22559C19.2597 8.98732 19.2848 8.64474 19.0955 8.45439C18.9436 8.31522 18.7119 8.2849 18.3374 8.2849H17.2208V9.72487H16.1806L16.1805 5.76602ZM11.9874 5.76602H15.4621V6.59041H13.0277V7.304H15.4037V8.1155H13.0277V8.90611H15.4621V9.72483H11.9874V5.76602Z"
+                                                fill="#FEFEFE" />
+                                        </svg>
+                                    </li>
+                                    <li><svg width="57" height="53" viewBox="0 0 37 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="23" rx="4" fill="#F6F6F6" />
+                                            <path
+                                                d="M11.8205 19.2031V18.1215C11.8268 18.0306 11.8136 17.9393 11.7819 17.8538C11.7502 17.7684 11.7006 17.6906 11.6365 17.6258C11.5723 17.561 11.4951 17.5106 11.41 17.4779C11.3248 17.4453 11.2337 17.4312 11.1427 17.4365C11.0236 17.4287 10.9045 17.453 10.798 17.5069C10.6914 17.5608 10.6013 17.6424 10.537 17.743C10.4784 17.6454 10.3946 17.5654 10.2943 17.5115C10.1941 17.4575 10.0811 17.4316 9.96737 17.4365C9.86823 17.4315 9.7695 17.4525 9.68096 17.4974C9.59243 17.5423 9.51716 17.6096 9.46263 17.6925V17.4798H9.08768V19.2031H9.46623V18.2549C9.45818 18.196 9.46325 18.136 9.48107 18.0793C9.49889 18.0225 9.52903 17.9704 9.56933 17.9267C9.60963 17.8829 9.6591 17.8486 9.7142 17.8262C9.76929 17.8038 9.82866 17.7939 9.88805 17.7971C10.1368 17.7971 10.263 17.9593 10.263 18.2513V19.2103H10.6416V18.2549C10.6338 18.1961 10.6391 18.1362 10.6571 18.0796C10.675 18.023 10.7052 17.971 10.7454 17.9274C10.7856 17.8837 10.835 17.8494 10.8899 17.8269C10.9449 17.8044 11.0041 17.7942 11.0634 17.7971C11.3194 17.7971 11.4419 17.9593 11.4419 18.2513V19.2103L11.8205 19.2031ZM17.4213 17.4798H16.8048V16.957H16.4263V17.4798H16.0838V17.8223H16.4335V18.6155C16.4335 19.0157 16.5885 19.2536 17.032 19.2536C17.1976 19.2542 17.3601 19.2079 17.5006 19.1202L17.3925 18.7993C17.2919 18.8593 17.1778 18.8928 17.0608 18.8967C16.8805 18.8967 16.812 18.7813 16.812 18.6083V17.8223H17.4249L17.4213 17.4798ZM20.6192 17.4365C20.5278 17.4338 20.4374 17.4559 20.3574 17.5003C20.2775 17.5447 20.211 17.6099 20.165 17.6889V17.4798H19.7936V19.2031H20.1686V18.2369C20.1686 17.9521 20.2911 17.7935 20.5291 17.7935C20.6093 17.7924 20.6889 17.8071 20.7634 17.8367L20.8788 17.4762C20.7932 17.4456 20.703 17.4297 20.612 17.4293L20.6192 17.4365ZM15.7845 17.6168C15.5723 17.4906 15.3283 17.428 15.0815 17.4365C14.6452 17.4365 14.3604 17.6456 14.3604 17.9881C14.3604 18.2694 14.5695 18.4424 14.9553 18.4965L15.1356 18.5217C15.3411 18.5506 15.4384 18.6047 15.4384 18.702C15.4384 18.8354 15.3014 18.9111 15.0454 18.9111C14.8395 18.9171 14.6376 18.8536 14.4722 18.7308L14.2919 19.0229C14.5103 19.1754 14.7719 19.2537 15.0382 19.2464C15.5358 19.2464 15.8242 19.012 15.8242 18.684C15.8242 18.3559 15.597 18.2225 15.2221 18.1684L15.0418 18.1432C14.8796 18.1215 14.7498 18.0891 14.7498 17.9737C14.7498 17.8584 14.8724 17.7718 15.0779 17.7718C15.2678 17.774 15.454 17.8249 15.6187 17.9196L15.7845 17.6168ZM25.8271 17.4365C25.7357 17.4338 25.6452 17.4559 25.5653 17.5003C25.4853 17.5447 25.4188 17.6099 25.3728 17.6889V17.4798H25.0015V19.2031H25.3764V18.2369C25.3764 17.9521 25.499 17.7935 25.737 17.7935C25.8172 17.7924 25.8968 17.8071 25.9713 17.8367L26.0867 17.4762C26.001 17.4456 25.9108 17.4297 25.8199 17.4293L25.8271 17.4365ZM20.996 18.3379C20.9915 18.459 21.0124 18.5797 21.0573 18.6922C21.1021 18.8048 21.17 18.9068 21.2565 18.9916C21.3431 19.0765 21.4464 19.1423 21.5598 19.1849C21.6732 19.2276 21.7943 19.246 21.9153 19.2392C22.1405 19.2506 22.3617 19.1773 22.5354 19.0337L22.3552 18.7308C22.2256 18.8297 22.0675 18.884 21.9045 18.8859C21.7659 18.8746 21.6366 18.8117 21.5424 18.7095C21.4481 18.6073 21.3957 18.4733 21.3957 18.3343C21.3957 18.1952 21.4481 18.0613 21.5424 17.959C21.6366 17.8568 21.7659 17.7939 21.9045 17.7826C22.0675 17.7845 22.2256 17.8388 22.3552 17.9377L22.5354 17.6348C22.3617 17.4912 22.1405 17.4179 21.9153 17.4293C21.7943 17.4225 21.6732 17.4409 21.5598 17.4836C21.4464 17.5262 21.3431 17.592 21.2565 17.6769C21.17 17.7617 21.1021 17.8637 21.0573 17.9763C21.0124 18.0888 20.9915 18.2095 20.996 18.3306V18.3379ZM24.5075 18.3379V17.4798H24.1326V17.6889C24.0689 17.607 23.9867 17.5414 23.8926 17.4975C23.7986 17.4536 23.6955 17.4327 23.5918 17.4365C23.3528 17.4365 23.1235 17.5315 22.9545 17.7005C22.7854 17.8696 22.6905 18.0988 22.6905 18.3379C22.6905 18.5769 22.7854 18.8062 22.9545 18.9752C23.1235 19.1442 23.3528 19.2392 23.5918 19.2392C23.6955 19.243 23.7986 19.2221 23.8926 19.1782C23.9867 19.1344 24.0689 19.0687 24.1326 18.9868V19.1959H24.5075V18.3379ZM23.1123 18.3379C23.1183 18.2364 23.1538 18.1389 23.2145 18.0574C23.2751 17.9759 23.3583 17.9139 23.4538 17.8791C23.5493 17.8443 23.6528 17.8381 23.7517 17.8614C23.8506 17.8847 23.9406 17.9364 24.0105 18.0101C24.0804 18.0839 24.1272 18.1765 24.1451 18.2765C24.1631 18.3765 24.1514 18.4796 24.1115 18.5731C24.0716 18.6665 24.0052 18.7463 23.9206 18.8025C23.8359 18.8587 23.7367 18.8889 23.6351 18.8895C23.5637 18.8904 23.4929 18.8765 23.4271 18.8487C23.3614 18.8209 23.3021 18.7798 23.253 18.728C23.2039 18.6762 23.1661 18.6148 23.1418 18.5477C23.1176 18.4805 23.1076 18.4091 23.1123 18.3379V18.3379ZM18.5876 17.4365C18.3486 17.4399 18.1207 17.538 17.954 17.7094C17.7873 17.8808 17.6956 18.1114 17.6989 18.3505C17.7023 18.5895 17.8005 18.8174 17.9719 18.9841C18.1432 19.1508 18.3738 19.2425 18.6129 19.2392C18.8722 19.2525 19.1273 19.169 19.3285 19.0048L19.1483 18.7272C19.0059 18.8414 18.8296 18.9048 18.6471 18.9075C18.5232 18.9182 18.4 18.88 18.3037 18.8013C18.2074 18.7225 18.1457 18.6093 18.1316 18.4857H19.4115C19.4115 18.4388 19.4115 18.3919 19.4115 18.3415C19.4115 17.8007 19.0762 17.4401 18.5931 17.4401L18.5876 17.4365ZM18.5876 17.7718C18.6438 17.7706 18.6995 17.7805 18.7518 17.8009C18.8041 17.8212 18.8519 17.8517 18.8924 17.8906C18.9329 17.9294 18.9654 17.9758 18.9879 18.0272C19.0105 18.0786 19.0227 18.1339 19.0239 18.19H18.1226C18.1291 18.0743 18.1807 17.9658 18.2662 17.8876C18.3518 17.8094 18.4646 17.7679 18.5804 17.7718H18.5876ZM27.9813 18.3415V16.7876H27.6207V17.6889C27.557 17.607 27.4748 17.5414 27.3808 17.4975C27.2867 17.4536 27.1836 17.4327 27.0799 17.4365C26.8409 17.4365 26.6116 17.5315 26.4426 17.7005C26.2736 17.8696 26.1786 18.0988 26.1786 18.3379C26.1786 18.5769 26.2736 18.8062 26.4426 18.9752C26.6116 19.1442 26.8409 19.2392 27.0799 19.2392C27.1836 19.243 27.2867 19.2221 27.3808 19.1782C27.4748 19.1344 27.557 19.0687 27.6207 18.9868V19.1959H27.9813V18.3415ZM28.6068 18.9526C28.6302 18.9523 28.6535 18.9566 28.6753 18.9652C28.696 18.9736 28.7149 18.9859 28.7312 19.0012C28.747 19.0168 28.7598 19.0351 28.769 19.0553C28.7781 19.0764 28.7829 19.0991 28.7829 19.122C28.7829 19.145 28.7781 19.1677 28.769 19.1887C28.7598 19.2089 28.747 19.2272 28.7312 19.2428C28.7149 19.2582 28.696 19.2704 28.6753 19.2788C28.6537 19.2884 28.6304 19.2933 28.6068 19.2933C28.5726 19.293 28.5392 19.283 28.5105 19.2645C28.4818 19.246 28.4589 19.2197 28.4445 19.1887C28.4355 19.1676 28.4309 19.1449 28.4309 19.122C28.4309 19.0991 28.4355 19.0764 28.4445 19.0553C28.4537 19.0351 28.4665 19.0168 28.4824 19.0012C28.4986 18.9859 28.5176 18.9736 28.5383 18.9652C28.5617 18.9558 28.5869 18.9515 28.6122 18.9526H28.6068ZM28.6068 19.2572C28.6248 19.2573 28.6426 19.2536 28.659 19.2464C28.6746 19.2395 28.6886 19.2297 28.7005 19.2176C28.7231 19.1929 28.7356 19.1608 28.7356 19.1274C28.7356 19.094 28.7231 19.0619 28.7005 19.0373C28.6887 19.0251 28.6746 19.0153 28.659 19.0084C28.6426 19.0013 28.6248 18.9976 28.6068 18.9976C28.5888 18.9977 28.571 19.0014 28.5545 19.0084C28.5383 19.0151 28.5236 19.0249 28.5112 19.0373C28.4887 19.0619 28.4762 19.094 28.4762 19.1274C28.4762 19.1608 28.4887 19.1929 28.5112 19.2176C28.5236 19.2299 28.5383 19.2397 28.5545 19.2464C28.5727 19.2542 28.5924 19.2579 28.6122 19.2572H28.6068ZM28.6176 19.0427C28.6344 19.0419 28.651 19.047 28.6645 19.0571C28.67 19.0617 28.6743 19.0675 28.6771 19.0741C28.68 19.0807 28.6812 19.0878 28.6807 19.095C28.6809 19.101 28.68 19.1069 28.6778 19.1125C28.6756 19.1181 28.6723 19.1232 28.6681 19.1274C28.6576 19.1369 28.6443 19.1426 28.6302 19.1436L28.6825 19.2031H28.641L28.5924 19.1436H28.5761V19.2031H28.5419V19.0445L28.6176 19.0427ZM28.5779 19.0733V19.1166H28.6176C28.6246 19.1187 28.6322 19.1187 28.6392 19.1166C28.6405 19.1141 28.6411 19.1113 28.6411 19.1085C28.6411 19.1057 28.6405 19.1029 28.6392 19.1004C28.6405 19.0979 28.6411 19.0951 28.6411 19.0923C28.6411 19.0894 28.6405 19.0867 28.6392 19.0842C28.6322 19.0821 28.6246 19.0821 28.6176 19.0842L28.5779 19.0733ZM26.595 18.3415C26.601 18.24 26.6365 18.1425 26.6972 18.061C26.7579 17.9795 26.8411 17.9175 26.9365 17.8827C27.032 17.8479 27.1355 17.8417 27.2345 17.865C27.3334 17.8883 27.4233 17.94 27.4932 18.0138C27.5631 18.0875 27.6099 18.1801 27.6279 18.2801C27.6458 18.3801 27.6341 18.4832 27.5942 18.5767C27.5543 18.6701 27.4879 18.7499 27.4033 18.8061C27.3186 18.8623 27.2194 18.8925 27.1178 18.8931C27.0464 18.894 26.9756 18.8801 26.9099 18.8523C26.8441 18.8245 26.7848 18.7834 26.7357 18.7316C26.6866 18.6798 26.6488 18.6184 26.6246 18.5513C26.6003 18.4841 26.5903 18.4127 26.595 18.3415V18.3415ZM13.935 18.3415V17.4798H13.5601V17.6889C13.4964 17.607 13.4141 17.5414 13.3201 17.4975C13.2261 17.4536 13.123 17.4327 13.0193 17.4365C12.7802 17.4365 12.551 17.5315 12.3819 17.7005C12.2129 17.8696 12.1179 18.0988 12.1179 18.3379C12.1179 18.5769 12.2129 18.8062 12.3819 18.9752C12.551 19.1442 12.7802 19.2392 13.0193 19.2392C13.123 19.243 13.2261 19.2221 13.3201 19.1782C13.4141 19.1344 13.4964 19.0687 13.5601 18.9868V19.1959H13.935V18.3415ZM12.5398 18.3415C12.5457 18.24 12.5812 18.1425 12.6419 18.061C12.7026 17.9795 12.7858 17.9175 12.8813 17.8827C12.9767 17.8479 13.0803 17.8417 13.1792 17.865C13.2781 17.8883 13.368 17.94 13.4379 18.0138C13.5078 18.0875 13.5546 18.1801 13.5726 18.2801C13.5905 18.3801 13.5788 18.4832 13.5389 18.5767C13.499 18.6701 13.4327 18.7499 13.348 18.8061C13.2634 18.8623 13.1641 18.8925 13.0625 18.8931C12.9908 18.8945 12.9197 18.881 12.8535 18.8534C12.7873 18.8259 12.7276 18.7848 12.6781 18.733C12.6286 18.6811 12.5904 18.6195 12.566 18.5521C12.5415 18.4847 12.5314 18.413 12.5361 18.3415H12.5398Z"
+                                                fill="#231F20" />
+                                            <path d="M21.3387 4.3477H15.6603V14.5525H21.3387V4.3477Z" fill="#FF5F00" />
+                                            <path
+                                                d="M16.0208 9.45075C16.0198 8.46782 16.2424 7.49753 16.6718 6.61336C17.1013 5.7292 17.7263 4.95433 18.4995 4.34745C17.5421 3.59506 16.3924 3.1272 15.1817 2.99733C13.971 2.86746 12.7482 3.08082 11.653 3.61304C10.5579 4.14525 9.63454 4.97484 8.98855 6.00699C8.34257 7.03915 8 8.23222 8 9.44985C8 10.6675 8.34257 11.8606 8.98855 12.8927C9.63454 13.9249 10.5579 14.7545 11.653 15.2867C12.7482 15.8189 13.971 16.0322 15.1817 15.9024C16.3924 15.7725 17.5421 15.3046 18.4995 14.5523C17.7265 13.9456 17.1017 13.171 16.6722 12.2872C16.2428 11.4033 16.0201 10.4334 16.0208 9.45075V9.45075Z"
+                                                fill="#EB001B" />
+                                            <path
+                                                d="M29 9.45104C29 10.6688 28.6574 11.8619 28.0113 12.8941C27.3652 13.9263 26.4417 14.7559 25.3464 15.288C24.2511 15.8201 23.0282 16.0334 21.8174 15.9033C20.6066 15.7733 19.4569 15.3052 18.4996 14.5525C19.2723 13.9453 19.8969 13.1705 20.3265 12.2866C20.756 11.4028 20.9792 10.4329 20.9792 9.45014C20.9792 8.46741 20.756 7.49752 20.3265 6.61364C19.8969 5.72976 19.2723 4.95497 18.4996 4.34774C19.4569 3.59511 20.6066 3.12702 21.8174 2.99697C23.0282 2.86691 24.2511 3.08014 25.3464 3.61227C26.4417 4.14441 27.3652 4.97399 28.0113 6.00618C28.6574 7.03836 29 8.23151 29 9.44924V9.45104Z"
+                                                fill="#F79E1B" />
+                                            <path
+                                                d="M28.3799 13.4708V13.2616H28.4646V13.2184H28.2501V13.2616H28.3421V13.4708H28.3799ZM28.7963 13.4708V13.2184H28.7314L28.6557 13.3986L28.58 13.2184H28.5223V13.4708H28.5692V13.2815L28.6395 13.4455H28.6882L28.7585 13.2815V13.4726L28.7963 13.4708Z"
+                                                fill="#F79E1B" />
+                                        </svg>
+                                    </li>
+                                    <li><svg width="57" height="53" viewBox="0 0 37 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="23" rx="4" fill="#F6F6F6" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M18.7537 9.88319C18.7385 11.0578 19.8197 11.7132 20.6343 12.103C21.4712 12.5028 21.7522 12.7592 21.7491 13.1168C21.7427 13.664 21.0815 13.9056 20.4626 13.915C19.3829 13.9315 18.7552 13.6288 18.2561 13.3998L17.8673 15.1868C18.368 15.4134 19.2951 15.611 20.2566 15.6196C22.5133 15.6196 23.9898 14.5258 23.9978 12.8298C24.0066 10.6775 20.9657 10.5583 20.9864 9.59616C20.9936 9.3045 21.2771 8.99324 21.8984 8.914C22.2059 8.87402 23.0547 8.84344 24.017 9.27862L24.3947 7.54966C23.8772 7.36466 23.2121 7.18745 22.3839 7.18745C20.2597 7.18745 18.7656 8.29616 18.7537 9.88319ZM28.0242 7.33642C27.6121 7.33642 27.2647 7.57244 27.1098 7.93471L23.886 15.4926H26.1412L26.5899 14.2749H29.3458L29.6062 15.4926H31.5937L29.8593 7.33642H28.0242ZM28.3396 9.5397L28.9904 12.6024H27.2081L28.3396 9.5397ZM16.0194 7.33642L14.2418 15.4926H16.3907L18.1675 7.33642H16.0194ZM12.8403 7.33642L10.6035 12.8878L9.69874 8.16756C9.59253 7.64064 9.17329 7.33642 8.70773 7.33642H5.05111L5 7.5732C5.75065 7.73315 6.60352 7.99112 7.12019 8.26717C7.43642 8.43574 7.52665 8.58313 7.63047 8.98379L9.34418 15.4926H11.6153L15.097 7.33642H12.8403Z"
+                                                fill="#1A1F70" />
+                                        </svg></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-5">
+                <div class="col-8 col-lg-5">
+
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.586448732842!2d-74.05827008530578!3d4.667580396609537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bbb91e7995b%3A0x9b94d4dfcb8a1aa1!2sKicks%20%7C%20Calle%2082!5e0!3m2!1ses!2sco!4v1679621105556!5m2!1ses!2sco"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -366,18 +432,34 @@
                 </div>
             </div>
         </div>
+        </div>
+
+
     </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        const myCarouselElement = document.querySelector('#carouselExampleDark')
+        $('.sliderPEPE').slick({
+            infinite: true,
+            slidesToShow: 8,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
 
+        });
+
+        const myCarouselElement = document.querySelector('#carruselHome')
+        console.log(myCarouselElement)
         const carousel = new bootstrap.Carousel(myCarouselElement, {
-            interval: 500,
-            touch: false,
+            interval: 3000,
             pause: false
         })
     </script>
