@@ -553,6 +553,9 @@ iframe{
     justify-content: end; 
     align-items: center;  
     margin: 15px;
+    position: absolute;
+    left: -9%;
+    
 
 }
 
