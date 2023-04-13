@@ -35,14 +35,22 @@
 
             </button>
         </div>
+        html <!-- animacion lupa -->
+        <div class="container1 lupa">
+            <div class="src-box">
+                <input type="text" placeholder=" ">
+                <button type="reset"></button>
+            </div>
+        </div>
+    </div>
     </div>
     <div>
         <nav class="barra fixed-top">
             <a href="./sneakDog.html">Home</a>
-            <a href="#seccionAbout">About Us</a>
+            <a href="./awesomeStyle.html">About Us</a>
             <a href="./sneakProducts.html">Products</a>
-            <a href="#">Stores</a>
-            <a href="#seccionContactanos">Contact</a>
+            <a href="https://www.google.com/maps/dir//Kicks+%7C+Calle+82+Cl.+82+Localidad+de+Chapinero+Bogot%C3%A1,+Cundinamarca/@4.6675206,-74.0561131,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8e3f9bbb91e7995b:0x9b94d4dfcb8a1aa1">Stores</a>
+            <a href="#seccionContact">Contact</a>
             <div class="animation start-home"></div>
         </nav>
     </div>
@@ -967,14 +975,15 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="col-12">
-                        <a href="#">About us</a>
+                        
+                        <a  id="seccionAbout">About us</a>
                         <p>SneakDog was born in 2021 as a virtual store for high-end and history sneakers, specialized
                             in exclusive collaborations with artists, celebrities; collectors editions
                         </p>
                         <p>Currently, we have multiple offices in U.S, Mexico, Argentina and Colombia. adding more
                             commercial products to our stores, however. collectors pieces are still in circulation.</p>
-                        <a href="#">News</a>
-                        <a href="#">Contact us</a>
+                        <a href="https://sneakernews.com/">News</a>
+                        <a id="seccionContact">Contact us</a>
                         <p>Telephone: 310-456-5663</p>
                         <p>e-mail: Infosneakdog@SneakDog.com</p>
                         <div class="payments">
@@ -1120,11 +1129,43 @@
     <script>
         $('.sliderPEPE').slick({
             infinite: true,
+            autoplay: true,
             slidesToShow: 8,
             slidesToScroll: 3,
-            autoplay: true,
             autoplaySpeed: 2000,
-
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 7,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
 
         const myCarouselElement = document.querySelector('#carruselHome')

@@ -10,11 +10,7 @@
 
 body {
     background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #434343, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #434343, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
 
 }
@@ -29,7 +25,9 @@ body {
     width: 65%;
 }
 
-
+body {
+    overflow-x: hidden;
+}
 
 nav {
     margin: 27px auto 0;
@@ -223,7 +221,7 @@ span {
     font-size: 50px;
 }
 
-.productosGeneral{
+.productosGeneral {
     margin-top: 100px;
 }
 
@@ -242,7 +240,8 @@ span {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
-    border: solid 5px #e67e22;;
+    border: solid 5px #e67e22;
+    ;
 
 }
 
@@ -345,10 +344,11 @@ footer {
     }
 }
 
-.col-12{
+.col-12 {
     margin-right: 200px;
 }
-.col-12 a{
+
+.col-12 a {
     text-decoration: none;
     display: flex;
     justify-content: flex-start;
@@ -358,22 +358,26 @@ footer {
     text-decoration: none;
     color: #fff;
 }
+
 .col-12 p {
     color: #FFF;
     margin-top: 1px;
 }
-iframe{
+
+iframe {
     margin-top: 60px;
     width: 500px;
 }
-.tarjetas ul{
+
+.tarjetas ul {
     display: flex;
     justify-content: space-around;
     padding-left: 0rem;
 
 }
-.mapa{
-    margin-left:  200px;
+
+.mapa {
+    margin-left: 200px;
 }
 
 /* Animacion principal */
@@ -388,6 +392,13 @@ iframe{
     font-family: 'Poppins', sans-serif;
 }
 
+#seccionContact {
+    color: white;
+}
+
+#seccionAbout {
+    color: white;
+}
 
 .hero-section {
     display: flex;
@@ -401,6 +412,7 @@ iframe{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .carta {
@@ -409,6 +421,7 @@ iframe{
     gap: 50px;
     width: 220px;
     transition: .4s ease;
+    margin-top: 20px;
 }
 
 .carta:before {
@@ -473,92 +486,120 @@ iframe{
 
 /* Lupa */
 
-.src-box { 
+.src-box {
     font-size: 20px;
-    border: solid .25em #ffffff; 
-    display: inline-block; 
-    position: relative; 
-    border-radius: 2.5em; 
-} 
-
-.src-box input[type=text] { 
-    text-align: center;
-    font-family: inherit; 
-    font-weight: bold; 
-    color: #ffffff; 
-    width: 2.5em; 
-    height: 2.5em; 
-    background-color: transparent; 
-    border: none; 
-    box-sizing: border-box; 
-    border-radius: 2.5em; 
-    transition: width 800ms cubic-bezier(.68, -.55, .27, 1.55) 150ms; 
-} 
-
-.src-box input[type=text]:focus { 
-    outline: none; 
-} 
-
-.src-box input[type=text]:focus, 
-.src-box input[type=text]:not(:placeholder-shown) { 
-    width: 18em; 
-    transition: width 800ms cubic-bezier(.68, -.55, .27, 1.55); 
-} 
-
-.src-box input[type=text]:focus + button[type=reset], 
-.src-box input[type=text]:not(:placeholder-shown) + button[type=reset] { 
-    transform: rotate(-45deg) translateY(0); 
-    transition: transform 150ms ease-out 800ms; 
-} 
-
-.src-box input[type=text]:focus + button[type=reset]::after, 
-.src-box input[type=text]:not(:placeholder-shown) + button[type=reset]::after { 
-    opacity: 1; 
-    transition: top 150ms ease-out 950ms, right 150ms ease-out 950ms, opacity 150ms ease 950ms; 
-} 
-
-.src-box button[type=reset] { 
-    background-color: transparent; 
-    width: 1.4em; 
-    height: 1.4em; 
-    border: 0; 
-    padding: 0; 
-    outline: 0; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    position: absolute; 
-    top: .55em; 
-    right: .55em; 
-    transform: rotate(-45deg) translateY(2.2em); 
-    transition: transform 150ms ease-out 150ms; } 
-    
-    .src-box button[type=reset]::before, .src-box button[type=reset]::after { 
-        content: ""; 
-        background-color: #ffffff; 
-        width: .3em; 
-        height: 1.4em; 
-        border-radius: 10px; 
-        position: absolute; 
-    } 
-    
-    .src-box button[type=reset]::after { 
-    transform: rotate(90deg); 
-    opacity: 0; 
-    transition: transform 150ms ease-out, opacity 150ms ease-out; 
+    border: solid .25em #ffffff;
+    display: inline-block;
+    position: relative;
+    border-radius: 2.5em;
 }
 
-.container1{
-    display: flex; 
-    justify-content: end; 
-    align-items: center;  
+.src-box input[type=text] {
+    text-align: center;
+    font-family: inherit;
+    font-weight: bold;
+    color: #ffffff;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2.5em;
+    transition: width 800ms cubic-bezier(.68, -.55, .27, 1.55) 150ms;
+}
+
+.src-box input[type=text]:focus {
+    outline: none;
+}
+
+.src-box input[type=text]:focus,
+.src-box input[type=text]:not(:placeholder-shown) {
+    width: 18em;
+    transition: width 800ms cubic-bezier(.68, -.55, .27, 1.55);
+}
+
+.src-box input[type=text]:focus+button[type=reset],
+.src-box input[type=text]:not(:placeholder-shown)+button[type=reset] {
+    transform: rotate(-45deg) translateY(0);
+    transition: transform 150ms ease-out 800ms;
+}
+
+.src-box input[type=text]:focus+button[type=reset]::after,
+.src-box input[type=text]:not(:placeholder-shown)+button[type=reset]::after {
+    opacity: 1;
+    transition: top 150ms ease-out 950ms, right 150ms ease-out 950ms, opacity 150ms ease 950ms;
+}
+
+.src-box button[type=reset] {
+    background-color: transparent;
+    width: 1.4em;
+    height: 1.4em;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: .55em;
+    right: .55em;
+    transform: rotate(-45deg) translateY(2.2em);
+    transition: transform 150ms ease-out 150ms;
+}
+
+.src-box button[type=reset]::before, .src-box button[type=reset]::after {
+    content: "";
+    background-color: #ffffff;
+    width: .3em;
+    height: 1.4em;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.src-box button[type=reset]::after {
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: transform 150ms ease-out, opacity 150ms ease-out;
+}
+
+.container1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
     margin: 15px;
     position: absolute;
     left: -9%;
-    
+
 
 }
 
 #load {
     position: absolute;
 }
+
+@media (max-width: 875px) {
+
+    .pepe {
+        flex-direction: column;
+        font-size: medium;
+
+    }
+    .carousel-item {
+        margin-top: 40%;
+    }
+
+    .barra{
+        
+        flex-direction: column;
+}
+
+    .lupa{
+        display: none;
+    }
+
+@media (min-width: 875px) {
+}
+}
+
+
+
